@@ -5,7 +5,7 @@
     )
   )
   \union
-   \project_name{} (
+   \project_{name} (
     \select_{credit >= 750} customer
    )
 );
