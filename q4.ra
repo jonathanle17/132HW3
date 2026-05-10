@@ -1,0 +1,5 @@
+\rename_{name1, name2} (
+  \project_{B1.cname, B2.cname} (
+    \rename_{B1} borrower \join_{B1.lno = B2.lno \and B1.cname < B2.cname} \rename_{B2} borrower
+  )
+);
