@@ -1,0 +1,3 @@
+\project_{cname -> name} (
+  \select_{type = 'jumbo mortgage'} (borrower \join_{lno = no} loan)
+);
