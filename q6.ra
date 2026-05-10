@@ -1,7 +1,7 @@
 \rename_{name} (
   \project_{cname} (
-    \select_{sum_amount >= 13000} (
-      \aggr_{cname, sum(amount)} (
+    \select_{total_amount >= 13000} (
+      \aggr_{cname, sum(amount) : total_amount} (
         borrower \join_{lno = no} loan
       )
     )
