@@ -1,3 +1,5 @@
-\project_{cname} (
+\rename_{name <- cname} (
+ \project_{cname} (
   \select_{type = 'jumbo mortgage'} (borrower \join_{lno = no} loan)
+ )
 );
