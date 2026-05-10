@@ -1,5 +1,9 @@
 \rename_{name1, name2} (
-  \project_{B1.cname, B2.cname} (
-    \rename_{B1} borrower \join_{B1.lno = B2.lno \and B1.cname < B2.cname} \rename_{B2} borrower
+  \project_{c1, c2} (
+    \select_{c1 < c2} (
+      \select_{l1 = l2} (
+        \rename_{c1, l1, d1} borrower \cross \rename_{c2, l2, d2} borrower
+      )
+    )
   )
 );
