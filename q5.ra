@@ -1,0 +1,9 @@
+\rename_{loanNo} (
+  \project_{l1} (
+    \select_{c1 < c2} (
+      \select_{l1 = l2} (
+        \rename_{c1, l1, d1} borrower \cross \rename_{c2, l2, d2} borrower
+      )
+    )
+  )
+);
