@@ -1,0 +1,9 @@
+\rename_{name} (
+\project_{cname} (
+  \select_{total_amount >= 13000} (
+    \aggregate_{cname, sum(amount) -> total_amount} (
+      borrower \join_{lno = no} loan
+    )
+  )
+)
+);
