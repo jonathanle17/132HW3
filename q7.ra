@@ -2,7 +2,7 @@
   \project_{no} (
     loan \join_{amount = maxAmt} (
       \rename_{maxAmt} (
-        \aggr_{ : max(amount)} (loan)
+        \aggr_{max(amount)} (loan)
       )
     )
   )
