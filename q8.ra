@@ -3,7 +3,7 @@
     \rename_{name, total} (
       \aggr_{name : sum(amount)} (
         (\select_{name = 'John Smith'} customer)
-        \leftouterjoin_{name = cname}
+        \lojoin_{name = cname}
         (borrower \join_{lno = no} loan)
       )
     )
