@@ -1,0 +1,12 @@
+\rename_{loanNo} (
+  \project_{no} (
+    (\select_{cname = 'John Smith'} (borrower \join_{lno = no} loan))
+    \join_{minCredit = maxVal} (
+      \rename_{maxVal} (
+        \aggr_{max(minCredit)} (
+          \select_{cname = 'John Smith'} (borrower \join_{lno = no} loan)
+        )
+      )
+    )
+  )
+)
