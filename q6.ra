@@ -5,5 +5,5 @@
             borrower \join_{lno = no} loan
         )
     )
-);
+  )
 );
