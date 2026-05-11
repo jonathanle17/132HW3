@@ -4,8 +4,10 @@
       \select_{cname = 'John Smith'} (borrower \join_{lno = no} loan)
     )
     \union
-    \project_{0} (
-      \select_{name = 'John Smith'} customer
+    \rename_{amount} (
+      \project_{0} (
+        \select_{name = 'John Smith'} customer
+      )
     )
   )
 );
