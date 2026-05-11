@@ -1,9 +1,7 @@
 \rename_{loanNo} (
-    \project_{no} (loan)
-    \diff
-    \project_{L1.no} (
-        \select_{L1.amount < L2.amount} (
-            \rename_{L1} (loan) \cross \rename_{L2} (loan)
+    \project_{no} (
+        loan \join_{amount = maxAmt} (
+            \aggr_{max(amount) : maxAmt} (loan)
         )
     )
 );
